@@ -1,8 +1,10 @@
 package com.wafflestudio.bunnybunny.viewModel
 
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import com.wafflestudio.bunnybunny.data.example.ExampleRepository
+import com.wafflestudio.bunnybunny.lib.network.dto.ExampleGoodsPostPreview
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
@@ -15,4 +17,8 @@ class MainViewModel @Inject constructor(
     //채팅 탭:Chat
     //나의당근 탭:My
     var currentTab= mutableStateOf("Home")
+
+    val goodsPostList : MutableState<List<ExampleGoodsPostPreview>> = mutableStateOf(listOf())
+
+    //goodsPostList
 }

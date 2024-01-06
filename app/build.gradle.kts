@@ -53,7 +53,8 @@ android {
 }
 
 dependencies {
-
+    //Coli
+    implementation("io.coil-kt:coil-compose:1.4.0")
     // OkHttp
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
     // Retrofit
